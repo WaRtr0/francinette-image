@@ -20,5 +20,6 @@ RUN python3 -m venv venv
 RUN . venv/bin/activate
 WORKDIR /francinette
 RUN pip3 install -r requirements.txt
+RUN pip3 install norminette
 RUN chmod 777 tester.sh
 CMD ["/francinette/tester.sh"]
