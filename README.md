@@ -4,9 +4,9 @@ Francinette created by [xicodomingues](https://github.com/xicodomingues) is a to
 
 Use `francinette` or `paco` inside a project folder to run it.
 
-Here is a small installer which allows you to finally install francinette on an **Ubuntu PC** present in a **cluster of 42** without access to `sudo`. I would like to point out that I am not the creator of the francinette! This is just a script that makes installation easier. Thanks to [xicodomingues](https://github.com/xicodomingues).
+Here is a small installer which allows you to finally install [Francinette](https://github.com/xicodomingues/francinette/tree/master) on an **Ubuntu PC** present in a **cluster of 42** without access to `sudo`. I would like to point out that I am not the creator of the [Francinette](https://github.com/xicodomingues/francinette/tree/master)! This is just a script that makes installation easier. Thanks to [xicodomingues](https://github.com/xicodomingues).
 
-How does the installer work? It will simply use `Docker` which will allow you to create a second Ubuntu in a virtualized space which will automatically install virtualized Francinette with all rights to this space. Then your `$HOME` space will be interconnected with that of the `docker container`, the latter will be able to receive external executions which will interact on your volume and therefore execute the francinette.
+How does the installer work? It will simply use `Docker` which will allow you to create a second Ubuntu in a virtualized space which will automatically install virtualized [Francinette](https://github.com/xicodomingues/francinette/tree/master) with all rights to this space. Then your `$HOME` space will be interconnected with that of the `docker container`, the latter will be able to receive external executions which will interact on your volume and therefore execute the [Francinette](https://github.com/xicodomingues/francinette/tree/master).
 
 ## INSTALLATION:
 
@@ -17,4 +17,4 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 ```
 ## Documentation
 
-I can only advise you to look at the original francinette documentation for good use of this great tool!
+I can only advise you to look at the original [Francinette documentation](https://github.com/xicodomingues/francinette/tree/master#readme) for good use of this great tool!
