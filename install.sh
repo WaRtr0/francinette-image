@@ -10,8 +10,8 @@ RC_FILE="$HOME/.zshrc"
 
 if ! grep "francinette-image" "$RC_FILE" &> /dev/null; then
 printf "\nif ! docker ps | grep "francinette-image" &> /dev/null; then" "$HOME" >> "$RC_FILE"
-printf "\n\tif docker run -d -i -v /home:/home -t --name run-paco francinette-image /bin/bash | grep \"already\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
-printf "\n\tdocker start run-paco" "$HOME" >> "$RC_FILE"
+printf "\n\tif docker run -d -i -v /home:/home -t --name run-paco francinette-image /bin/bash 2>&1 | grep \"already\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
+printf "\n\t\tdocker start run-paco" "$HOME" >> "$RC_FILE"
 printf "\n\tfi" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
 fi
