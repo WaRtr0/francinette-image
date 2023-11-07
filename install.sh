@@ -4,7 +4,7 @@ cd $HOME
 git clone https://github.com/WaRtrO89/francinette-image.git
 cd $HOME/francinette-image
 chmod +x run.sh
-docker build -t francinette-image .
+docker build -t francinette-image $HOME/francinette-image
 
 RC_FILE="$HOME/.zshrc"
 
