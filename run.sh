@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec -it --workdir $PWD image_francinette python3 /francinette/main.py
+docker exec -it --workdir $PWD run-paco python3 /francinette/main.py
