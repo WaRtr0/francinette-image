@@ -1,13 +1,12 @@
 # Francinette install on 42-Session-Ubuntu
 
-Francinette creer par [xicodomingues](https://github.com/xicodomingues) est un outils pour pouvoir tester differents projet du tronc commun de 42 (`libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`).
+Francinette created by [xicodomingues](https://github.com/xicodomingues) is a tool to be able to test different projects of 42 `libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`).
 
 Use `francinette` or `paco` inside a project folder to run it.
 
-Voici un petite installeur qui permet de pouvoir enfin l'installer sur un pc ubuntu present dans les cluster de 42 n'ayant aucun acces a `sudo`.
-Je tiens a insister que je ne suis pas le createur de la francinette! Ceci est juste un script qui facilite son installation. Merci a [xicodomingues](https://github.com/xicodomingues).
+Here is a small installer which allows you to finally install francinette on an **Ubuntu PC** present in a **cluster of 42** without access to `sudo`. I would like to point out that I am not the creator of the francinette! This is just a script that makes installation easier. Thanks to [xicodomingues](https://github.com/xicodomingues).
 
-Comment l'installeur fonctionne ? Il va tout simplement utilise `Docker` qui va permettre de creer dan sun espace virtualise un deuxieme ubuntu qui y aura automatiquement d'installer Francinette, etant virtualiser tout a tout les droits sur cette espace. Ensuite ton home sera interconnecte avec celui du `container` du `docker`, celui ci va pouvoir recevoir des execution externe qui va interragir sur ton volume et donc executer la francinette.
+How does the installer work? It will simply use `Docker` which will allow you to create a second Ubuntu in a virtualized space which will automatically install virtualized Francinette with all rights to this space. Then your `$HOME` space will be interconnected with that of the `docker container`, the latter will be able to receive external executions which will interact on your volume and therefore execute the francinette.
 
 ## INSTALLATION:
 
