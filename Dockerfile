@@ -3,7 +3,6 @@ FROM ubuntu:22.04
 LABEL maintainer="contact@wartro.fr"
 LABEL version="0.1"
 LABEL description="francinette image 42"
-LABEL author="mmorot"
 
 
 RUN apt update -y
