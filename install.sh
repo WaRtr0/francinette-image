@@ -8,9 +8,11 @@ docker build -t francinette-image .
 
 RC_FILE="$HOME/.zshrc"
 
+if ! grep "francinette-image" "$RC_FILE" &> /dev/null; then
 printf "\nif ! docker ps | grep "francinette-image" &> /dev/null; then" "$HOME" >> "$RC_FILE"
-printf "\ndocker run -d -i -v /home:/home -t --name image_francinette francinette-image /bin/bash" "$HOME" >> "$RC_FILE"
+printf "\n\tdocker run -d -i -v /home:/home -t --name image_francinette francinette-image /bin/bash" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
+fi
 
 if ! grep "francinette=" "$RC_FILE" &> /dev/null; then
 	echo "francinette alias not present"
