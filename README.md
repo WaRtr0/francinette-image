@@ -2,7 +2,7 @@
 
 <h1 align="center">Francinette install on 42-Session-Ubuntu</h1>
 
-Francinette created by [xicodomingues](https://github.com/xicodomingues) is a tool to be able to test different projects of 42 `libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`).
+Francinette created by **[xicodomingues](https://github.com/xicodomingues)** is a tool to be able to test different projects of 42 `libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`).
 
 Use `francinette` or `paco` inside a project folder to run it.
 
