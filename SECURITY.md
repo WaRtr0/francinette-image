@@ -20,4 +20,4 @@ Hey there! If you stumble upon a security bug in the installer, it is crucial to
 
 We'll keep the details under wraps until the issue is ironed out. After that, we'll spill the beans with full transparency.
 
-A huge thanks for helping us keep our code top-notch and secure!
+Many thanks for your contribution!
