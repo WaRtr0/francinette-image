@@ -11,12 +11,14 @@ RC_FILE="$HOME/.zshrc"
 if ! grep "francinette-image" "$RC_FILE" &> /dev/null; then
 printf "\nif ! systemctl status docker | grep "running" &> /dev/null; then" "$HOME" >> "$RC_FILE"
 printf "\n\t\techo \"[Francinette] Starting Docker...\"" "$HOME" >> "$RC_FILE"
-printf "\n\t\tsleep 2" "$HOME" >> "$RC_FILE"
+printf "\n\t\tsleep 1" "$HOME" >> "$RC_FILE"
+printf "\n\t\texec \"$SHELL\"" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
 
 printf "\nif ! docker image ls | grep "francinette-image" &> /dev/null; then" "$HOME" >> "$RC_FILE"
 printf "\n\t\techo \"[Francinette] Loading the docker container\"" "$HOME" >> "$RC_FILE"
-printf "\n\t\tdocker load < %s/francinette-image/francinette.tar francinette-image" "$HOME" >> "$RC_FILE"
+printf "\n\t\tdocker load < %s/francinette-image/francinette.tar" "$HOME" >> "$RC_FILE"
+printf "\n\t\texec \"$SHELL\"" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
 
 printf "\nif ! docker ps | grep \"francinette-image\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
