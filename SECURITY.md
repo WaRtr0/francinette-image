@@ -2,7 +2,7 @@
 
 ## Spotted a Bug?
 
-Hey there! If you stumble upon a security bug in our installer, it's crucial to give us a heads up. We want to keep our dev environment squeaky clean, right? But if you find the bug in Francinette itself, you gotta reach out to [xicodomingues](https://github.com/xicodomingues).
+Hey there! If you stumble upon a security bug in the installer, it's crucial to give us a heads up. We want to keep our dev environment squeaky clean, right? But if you find the bug in Francinette itself, you gotta reach out to [xicodomingues](https://github.com/xicodomingues).
 
 ### How to Report a Bug?
 
