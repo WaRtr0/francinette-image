@@ -8,7 +8,7 @@ Hey there! If you stumble upon a security bug in the installer, it is crucial to
 
 - **If it's in the installer**: Shoot me an email at [mmorot@student.42lyon.fr] with all the nitty-gritty details. The more precise, the better.
 - **If it's in Francinette**: Since our installer always fetches the latest version of Francinette, any oddities there should be reported directly to xicodomingues.
-- **Not sure where the bug's at?**: Hit me up anyway. I might put the repo on hold to investigate.
+- **Don't you know where the bug is?**: Hit me up anyway. I might put the repo on hold to investigate.
 
 ### What's Next?
 
