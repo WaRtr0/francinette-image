@@ -12,7 +12,7 @@ How does the installer work? It utilizes `Docker` to create an isolated Ubuntu e
 
 ## INSTALLATION:
 
-You just have to copy and paste the line below into the terminal and you should be good to go!
+Copy and paste the following line into your terminal to kick off the installation, and you'll be all set to start testing your 42 projects with Francinette in no time!
 
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/install.sh)"
