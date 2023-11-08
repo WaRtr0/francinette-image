@@ -8,7 +8,7 @@ Use `francinette` or `paco` inside a project folder to run it.
 
 Here is a simple installer that enables you to install Francinette on an **Ubuntu PC** within a **cluster of 42**  without `sudo` access. I would like to point out that I am not the creator of the Francinette! This is just a script that makes installation easier. Thanks to [xicodomingues](https://github.com/xicodomingues).
 
-How does the installer work? It will simply use `Docker` which will allow you to create a second Ubuntu in a virtualized space which will automatically install virtualized Francinette with all rights to this space. Then your `$HOME` space will be interconnected with that of the `docker container`, the latter will be able to receive external executions which will interact on your volume and therefore execute the Francinette.
+How does the installer work? It utilizes `Docker` to create an isolated Ubuntu environment which will automatically set up Francinette with all the necessary permissions within this virtual space. Your local `$HOME` directory will be shared with the Docker container, allowing the container to execute commands that interact with your files and thus run Francinette.
 
 ## INSTALLATION:
 
