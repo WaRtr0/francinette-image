@@ -14,7 +14,7 @@ Hey there! If you stumble upon a security bug in the installer, it is crucial to
 
 1. I'll get back to you as soon as I get your email.
 2. I'll dive into the issue and get cracking on a fix.
-3. Once patched up, I'll roll out an update, and you'll get a shoutout for your eagle eyes.
+3. Once patched up, I'll roll out an update, and you will have the gratitude of the large community of 42.
 
 ### Disclosure Protocol:
 
