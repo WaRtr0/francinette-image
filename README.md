@@ -10,8 +10,9 @@ Here is a simple installer that enables you to install Francinette on an **Ubunt
 
 How does the installer work? It utilizes `Docker` to create an isolated Ubuntu environment which will automatically set up Francinette with all the necessary permissions within this virtual space. Your local `$HOME` directory will be shared with the Docker container, allowing the container to execute commands that interact with your files and thus run Francinette.
 
-<div style="color:red">⚠️ Please note, this script was created to be installed only on computers of 42. Use the original script for your personal computer "here".⚠️<div>
-
+```diff
+- ⚠️ Please note, this script was created to be installed only on computers of 42. Use the original script for your personal computer "here".⚠️
+```
 ## INSTALLATION:
 
 Copy and paste the following line into your terminal to kick off the installation, and you'll be all set to start testing your school 42 projects with Francinette in no time!
