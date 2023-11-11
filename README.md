@@ -23,10 +23,3 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 ## Documentation
 
 I can only advise you to look at the [original Francinette documentation](https://github.com/xicodomingues/francinette/tree/master#readme) for good use of this great tool!
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 20" fill="none">
-    <text x="0" y="15" fill="#4285f4">T</text>
-    <text x="12" y="15" fill="#ea4335">e</text>
-    <text x="21" y="15" fill="#fbbc05">s</text>
-    <text x="30" y="15" fill="#4285f4">t</text>
-</svg>
