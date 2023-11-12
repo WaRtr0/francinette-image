@@ -33,5 +33,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 
 I can only advise you to look at the [original Francinette documentation](https://github.com/xicodomingues/francinette/tree/master#readme) for good use of this great tool!
 
-> [!test]
-> This script was developed for installation on **42 school computers**. Use the original script for your personal computer, available [here](https://github.com/xicodomingues/francinette/tree/master#readme).
+## Who should I thank?
+
+* [xicodomingues](https://github.com/xicodomingues) and [arsalas](https://github.com/arsalas) creator of the [francinette](https://github.com/xicodomingues/francinette) having link different tests, carried out by the people below
+* To [Tripouille](https://github.com/Tripouille) for [libftTester](https://github.com/Tripouille/libftTester), [gnlTester](https://github.com/Tripouille/gnlTester) and [printfTester](https://github.com/Tripouille/printfTester)
+* To [jtoty](https://github.com/jtoty) and [y3ll0w42](https://github.com/y3ll0w42) for [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine)
+* To [alelievr](https://github.com/alelievr) for [libft-unit-test](https://github.com/alelievr/libft-unit-test) and [printf-unit-test](https://github.com/alelievr/printf-unit-test)
+* To [cacharle](https://github.com/cacharle) for [ft_printf_test](https://github.com/cacharle/ft_printf_test)
+* To [vfurmane](https://github.com/vfurmane) for [pipex-tester](https://github.com/vfurmane/pipex-tester)
+* To [gmarcha](https://github.com/gmarcha) for [pipexMedic](https://github.com/gmarcha/pipexMedic)
