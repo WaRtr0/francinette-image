@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 LABEL maintainer="mmorot@student.42lyon.fr"
-LABEL version="0.1"
+LABEL version="1.0.3"
 LABEL description="francinette image 42"
 
 
