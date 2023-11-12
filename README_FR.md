@@ -1,6 +1,8 @@
 ![GitHub](https://img.shields.io/github/license/WaRtrO89/francinette-image) ![GitHub top language](https://img.shields.io/github/languages/top/WaRtrO89/francinette-image) ![GitHub repo size](https://img.shields.io/github/repo-size/WaRtrO89/francinette-image) ![GitHub Repo stars](https://img.shields.io/github/stars/WaRtrO89/francinette-image) ![GitHub repo directory count](https://img.shields.io/github/directory-file-count/WaRtrO89/francinette-image) ![GitHub watchers](https://img.shields.io/github/watchers/WaRtrO89/francinette-image) ![GitHub followers](https://img.shields.io/github/followers/WaRtrO89) ![GitHub contributors](https://img.shields.io/github/contributors/WaRtrO89/francinette-image) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/WaRtrO89/francinette-image/master)
 
-<h1 align="center">Installation de la Francinette sur <strong>une session de 42 Ubuntu</strong></h1>
+<h1 align="center">Installation de la Francinette sur <strong>une session de 42 Ubuntu</strong></h1>![en](https://github.com/WaRtrO89/francinette-image/assets/25512932/82e81111-e524-439b-b971-900ce90d0603)
+![fr](https://github.com/WaRtrO89/francinette-image/assets/25512932/f8be0b14-1175-41e8-9ff9-91eb29c35779)
+
 
 La Francinette, créée par **[xicodomingues](https://github.com/xicodomingues)** est un outil permettant de tester différents projets de l'école 42 tels que `libft`, `ft_printf`, `get_next_line`, `minitalk` et `pipex`.
 
