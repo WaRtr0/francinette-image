@@ -2,10 +2,10 @@
 
 <div align="right">
   <a href="https://github.com/WaRtrO89/nodejs-and-cpp/blob/main/README.md">
-    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272298-f8be0b14-1175-41e8-9ff9-91eb29c35779.png" alt="fr">
+    <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272298-f8be0b14-1175-41e8-9ff9-91eb29c35779.png" alt="fr">
   </a>
   <a href="https://github.com/WaRtrO89/nodejs-and-cpp/blob/main/README_FR.md">
-    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272296-82e81111-e524-439b-b971-900ce90d0603.png" alt="en">
+    <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272296-82e81111-e524-439b-b971-900ce90d0603.png" alt="en">
   </a>
 </div>
 <h1 align="center">Installation de la Francinette sur <strong>une session de 42 Ubuntu</strong></h1>
