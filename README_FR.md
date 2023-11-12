@@ -33,3 +33,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 ## Documentation
 
 Je vous conseille vivement de consulter la [documentation originale de Francinette](https://github.com/xicodomingues/francinette/tree/master#readme) pour bien utiliser cet excellent outil !
+
+## Qui dois-je remercier ?
+
+* [xicodomingues](https://github.com/xicodomingues) et [arsalas](https://github.com/arsalas) créateur de la [francinette](https://github.com/xicodomingues/francinette) ayant lié différents tests, réalisés par les personnes ci-dessous
+* [Tripouille](https://github.com/Tripouille) pour [libftTester](https://github.com/Tripouille/libftTester), [gnlTester](https://github.com/Tripouille/gnlTester) et [printfTester](https://github.com/Tripouille/printfTester)
+* [jtoty](https://github.com/jtoty) et [y3ll0w42](https://github.com/y3ll0w42) pour [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine)
+* [alelievr](https://github.com/alelievr) pour [libft-unit-test](https://github.com/alelievr/libft-unit-test) et [printf-unit-test](https://github.com/alelievr/printf-unit-test)
+* [cacharle](https://github.com/cacharle) pour [ft_printf_test](https://github.com/cacharle/ft_printf_test)
+* [vfurmane](https://github.com/vfurmane) pour [pipex-tester](https://github.com/vfurmane/pipex-tester)
+* [gmarcha](https://github.com/gmarcha) pour [pipexMedic](https://github.com/gmarcha/pipexMedic)
