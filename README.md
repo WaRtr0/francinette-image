@@ -4,11 +4,11 @@
 
 Francinette created by **[xicodomingues](https://github.com/xicodomingues)** is a tool to be able to test different projects of 42 (`libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`).
 
-Use `francinette` or `paco` inside a project folder to run it.
-
 Here is a simple installer that enables you to install Francinette on an **Ubuntu PC** within a **cluster of 42**  without `sudo` access. I would like to point out that I am not the creator of the Francinette! This is just a script that makes installation easier. Thanks to [xicodomingues](https://github.com/xicodomingues).
 
 How does the installer work? It utilizes `Docker` to create an isolated Ubuntu environment which will automatically set up Francinette with all the necessary permissions within this virtual space. Your local `$HOME` directory will be shared with the Docker container, allowing the container to execute commands that interact with your files and thus run Francinette.
+
+After installation, use the francinette or paco command inside your project's directory to execute it.
 
 > [!note]
 > This script was developed for installation on **42 school computers**. Use the original script for your personal computer, available [here](https://github.com/xicodomingues/francinette/tree/master#readme).
