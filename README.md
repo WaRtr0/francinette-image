@@ -32,3 +32,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 ## Documentation
 
 I can only advise you to look at the [original Francinette documentation](https://github.com/xicodomingues/francinette/tree/master#readme) for good use of this great tool!
+
+> [!test]
+> This script was developed for installation on **42 school computers**. Use the original script for your personal computer, available [here](https://github.com/xicodomingues/francinette/tree/master#readme).
