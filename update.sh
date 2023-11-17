@@ -15,6 +15,7 @@ if ls -l $HOME | grep "francinette-image" &> /dev/null; then
 
     rm -rf $HOME/francinette-image
 
+    mkdir -p $HOME/francinette-image
     mv -r $HOME/.tmp_francinette/francinette-image $HOME/francinette-image
     if ls -l $HOME/.tmp_francinette | grep "francinette.tar" &> /dev/null; then
         mv $HOME/.tmp_francinette/francinette.tar $HOME/francinette-image/

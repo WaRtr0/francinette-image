@@ -16,7 +16,7 @@ if ls -l $HOME/francinette-image | grep "francinette.tar" &> /dev/null; then
 	docker load < $HOME/francinette-image/francinette.tar
 fi
 
-source $HOME/francinette-image/utils/install_zshrc.sh
+bash $HOME/francinette-image/utils/install_zshrc.sh
 
 exec "$SHELL"
 
