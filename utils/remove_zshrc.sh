@@ -1,6 +1,6 @@
 #!/bin/bash
-sed -i '/\b\(systemctl status docker\|grep francinette-image|grep "francinette-image"\)\b/{N;N;N;N;d;}' /home/$USER/.zshrc
-sed -i "/\b\(alias paco\|alias francinette\)\b/d" /home/$USER/.zshrc
+sed -i '/\b\(systemctl status docker\|grep francinette-image|grep "francinette-image"\)\b/{N;N;N;N;d;}' $HOME/.zshrc
+sed -i "/\b\(alias paco\|alias francinette\)\b/d" $HOME/.zshrc
 
 WHITE='\033[0;37m' 
 BLUE='\033[0;36m'
