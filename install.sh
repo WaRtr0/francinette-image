@@ -24,7 +24,7 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 BWhite='\033[1;37m' 
 NC='\033[0m'
-echo -e "${BLUE}[Francinette] ${GREEN}Installation completed\!\n${WHITE}Use the ${BWhite}paco${WHITE} or ${BWhite}francinette${WHITE} commands in your project folder."
+echo -e "${BLUE}[Francinette] ${GREEN}Installation completed!\n${WHITE}Use the ${BWhite}paco${WHITE} or ${BWhite}francinette${WHITE} commands in your project folder."
 
 exec "$SHELL"
 
