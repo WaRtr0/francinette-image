@@ -36,4 +36,4 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 BWhite='\033[1;37m' 
 NC='\033[0m'
-echo -e "${BLUE}[Francinette] ${WHITE} zshrc params installed"
+echo -e "${BLUE}[Francinette] ${WHITE}zshrc params installed"
