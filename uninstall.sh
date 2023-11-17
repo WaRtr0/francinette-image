@@ -1,8 +1,8 @@
 #!/bin/bash
 
 mkdir -p $HOME/.tmp_francinette
-cd $HOME/.tmp_francinette
-git clone https://github.com/WaRtrO89/francinette-image.git
+
+git clone https://github.com/WaRtrO89/francinette-image.git $HOME/.tmp_francinette/francinette-image
 
 source $HOME/.tmp_francinette/francinette-image/utils/remove_docker.sh
 source $HOME/.tmp_francinette/francinette-image/utils/remove_zshrc.sh
