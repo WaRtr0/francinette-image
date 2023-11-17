@@ -1,11 +1,8 @@
 #!/bin/bash
-
-cd $HOME
 if ! ls -l $HOME | grep "francinette-image" &> /dev/null; then
-	git clone https://github.com/WaRtrO89/francinette-image.git
+	git clone https://github.com/WaRtrO89/francinette-image.git $HOME/francinette-image
 fi
 
-cd $HOME/francinette-image
 chmod +x $HOME/francinette-image/run.sh
 
 if ! ls -l $HOME/francinette-image | grep "francinette.tar" &> /dev/null; then
