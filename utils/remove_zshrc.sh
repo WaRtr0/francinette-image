@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i '/\b\(systemctl status docker\|grep francinette-image\)\b/{N;N;N;N;d;}' /home/$USER/.zshrc
+sed -i '/\b\(systemctl status docker\|grep francinette-image|grep "francinette-image"\)\b/{N;N;N;N;d;}' /home/$USER/.zshrc
 sed -i "/\b\(alias paco\|alias francinette\)\b/d" /home/$USER/.zshrc
 
 WHITE='\033[0;37m' 
