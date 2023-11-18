@@ -33,7 +33,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 
 ## MISE À JOUR:
 
-opiez et collez la ligne suivante dans votre terminal pour lancer une mise a jour de la francinette
+Copiez et collez la ligne suivante dans votre terminal pour lancer une mise a jour de la francinette
 
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/update.sh)"
