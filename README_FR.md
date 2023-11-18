@@ -39,7 +39,7 @@ Copiez et collez la ligne suivante dans votre terminal pour lancer une mise a jo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/update.sh)"
 ```
 
-## DÉSINSTALER:
+## DÉSINSTALLER:
 
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/uninstall.sh)"
