@@ -30,6 +30,21 @@ Copiez et collez la ligne suivante dans votre terminal pour lancer l'installatio
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/install.sh)"
 ```
+
+## MISE À JOUR:
+
+opiez et collez la ligne suivante dans votre terminal pour lancer une mise a jour de la francinette
+
+```shell
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/update.sh)"
+```
+
+## DÉSINSTALER:
+
+```shell
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/uninstall.sh)"
+```
+
 ## Documentation
 
 Je vous conseille vivement de consulter la [documentation originale de Francinette](https://github.com/xicodomingues/francinette/tree/master#readme) pour bien utiliser cet excellent outil !
