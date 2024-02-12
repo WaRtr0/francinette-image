@@ -1,11 +1,11 @@
-![GitHub](https://img.shields.io/github/license/WaRtrO89/francinette-image) ![GitHub top language](https://img.shields.io/github/languages/top/WaRtrO89/francinette-image) ![GitHub repo size](https://img.shields.io/github/repo-size/WaRtrO89/francinette-image) ![GitHub Repo stars](https://img.shields.io/github/stars/WaRtrO89/francinette-image) ![GitHub repo directory count](https://img.shields.io/github/directory-file-count/WaRtrO89/francinette-image) ![GitHub watchers](https://img.shields.io/github/watchers/WaRtrO89/francinette-image) ![GitHub followers](https://img.shields.io/github/followers/WaRtrO89) ![GitHub contributors](https://img.shields.io/github/contributors/WaRtrO89/francinette-image) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/WaRtrO89/francinette-image/master)
+![GitHub](https://img.shields.io/github/license/WaRtr0/francinette-image) ![GitHub top language](https://img.shields.io/github/languages/top/WaRtr0/francinette-image) ![GitHub repo size](https://img.shields.io/github/repo-size/WaRtr0/francinette-image) ![GitHub Repo stars](https://img.shields.io/github/stars/WaRtr0/francinette-image) ![GitHub repo directory count](https://img.shields.io/github/directory-file-count/WaRtr0/francinette-image) ![GitHub watchers](https://img.shields.io/github/watchers/WaRtr0/francinette-image) ![GitHub followers](https://img.shields.io/github/followers/WaRtr0) ![GitHub contributors](https://img.shields.io/github/contributors/WaRtr0/francinette-image) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/WaRtr0/francinette-image/master)
 
 <div align="right">
   👉
-  <a href="https://github.com/WaRtrO89/francinette-image/blob/master/README.md">
+  <a href="https://github.com/WaRtr0/francinette-image/blob/master/README.md">
     <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272296-82e81111-e524-439b-b971-900ce90d0603.png" alt="en">
   </a>
-   <a href="https://github.com/WaRtrO89/francinette-image/blob/master/README_FR.md">
+   <a href="https://github.com/WaRtr0/francinette-image/blob/master/README_FR.md">
     <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272298-f8be0b14-1175-41e8-9ff9-91eb29c35779.png" alt="fr">
   </a>
 </div>
@@ -27,7 +27,7 @@ After installation, use the `francinette` or `paco` command inside your project'
 Copy and paste the following line into your terminal to kick off the installation, and you'll be all set to start testing your school 42 projects with Francinette in no time!
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/install.sh)"
 ```
 
 ## Update:
@@ -35,13 +35,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-ima
 Copy and paste the following line into your terminal to launch the francinette update
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/update.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/update.sh)"
 ```
 
 ## Uninstall:
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtrO89/francinette-image/master/uninstall.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/uninstall.sh)"
 ```
 ## Documentation
 
