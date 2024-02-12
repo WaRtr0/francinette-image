@@ -6,7 +6,7 @@ RED='\033[0;31m'
 BWhite='\033[1;37m' 
 NC='\033[0m'
 if ! ls -l $HOME | grep "francinette-image" &> /dev/null; then
-	git clone https://github.com/WaRtrO89/francinette-image.git $HOME/francinette-image
+	git clone https://github.com/WaRtr0/francinette-image.git $HOME/francinette-image
 fi
 
 chmod +x $HOME/francinette-image/run.sh

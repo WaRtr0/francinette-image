@@ -6,7 +6,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 if ls -l $HOME | grep "francinette-image" &> /dev/null; then
     mkdir -p $HOME/.tmp_francinette
-    git clone https://github.com/WaRtrO89/francinette-image.git $HOME/.tmp_francinette/francinette-image
+    git clone https://github.com/WaRtr0/francinette-image.git $HOME/.tmp_francinette/francinette-image
 
     source $HOME/.tmp_francinette/francinette-image/utils/move_tmp.sh
     source $HOME/.tmp_francinette/francinette-image/utils/remove_docker.sh
