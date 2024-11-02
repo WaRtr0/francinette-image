@@ -23,6 +23,10 @@ Après l'installation, utilisez la commande `francinette` ou `paco` à l'intéri
 > [!note]
 > Ce script a été développé pour l'installation sur les ordinateurs de l'école 42. Utilisez le script original pour votre ordinateur personnel, disponible [ici](https://github.com/xicodomingues/francinette/tree/master#readme).
 
+> [!warning]
+> Francinette-image pèse environ 2,5 Go !
+> Contrairement à la version [original de Francinette](https://github.com/xicodomingues/francinette/tree/master#readme), "Francinette-image" est très volumineuse, car elle installe un second environnement Ubuntu 22.04 dans votre session.
+
 ## INSTALLATION :
 
 Copiez et collez la ligne suivante dans votre terminal pour lancer l'installation, et vous serez prêt à commencer à tester vos projets de l'école 42 avec Francinette en un rien de temps !
