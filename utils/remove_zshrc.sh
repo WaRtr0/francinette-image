@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i '/\b\("docker image ls | grep \"francinette-image\""\)\b/{N;N;N;N;N;N;N;N;N;N;N;N;N;N;d;}' $HOME/.zshrc
+sed -i '/^if ! docker image ls | grep francinette-image &> \/dev\/null; then/,/^fi/ d' $HOME/.zshrc
 sed -i '/\b\(systemctl status docker\|grep francinette-image\|grep \"francinette-image\"\)\b/{N;N;N;N;d;}' $HOME/.zshrc
 sed -i '/\b\("francinette-image"\)\b/{N;N;N;N;d;}' $HOME/.zshrc
 sed -i '/\b\("francinette-image"\|docker ps\)\b/{N;N;N;N;d;}' $HOME/.zshrc
