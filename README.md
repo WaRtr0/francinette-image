@@ -24,7 +24,7 @@ After installation, use the `francinette` or `paco` command inside your project'
 
 > [!warning]
 > Francinette-image is approximately 2.5 GB!
-> Unlike the original "Francinette," "Francinette-image" is very large because it installs a complete second Ubuntu 22.04 Linux environment on your session.
+> Unlike the [original Francinette](https://github.com/xicodomingues/francinette/tree/master#readme), "Francinette-image" is very large because it installs a complete second Ubuntu 22.04 Linux environment on your session.
 
 ## INSTALL:
 
