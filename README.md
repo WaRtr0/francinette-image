@@ -22,6 +22,10 @@ After installation, use the `francinette` or `paco` command inside your project'
 > [!note]
 > This script was developed for installation on **42 school computers**. Use the original script for your personal computer, available [here](https://github.com/xicodomingues/francinette/tree/master#readme).
 
+> [!warning]
+> Francinette-image is approximately 2.5 GB!
+> Unlike the original "Francinette," "Francinette-image" is very large because it installs a complete second Ubuntu 22.04 Linux environment on your session.
+
 ## INSTALL:
 
 Copy and paste the following line into your terminal to kick off the installation, and you'll be all set to start testing your school 42 projects with Francinette in no time!
