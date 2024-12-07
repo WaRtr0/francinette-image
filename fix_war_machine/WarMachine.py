@@ -25,8 +25,8 @@ def cat_file(path):
 
 
 def fix():
-    input_path = os.path.join(os.getcwd(), "/francinette/check_compilation.sh")
-    output_path = os.path.join(os.getcwd(), "/francinette/temp/libft/war-machine/srcs/check_compilation.sh")
+	input_path = os.path.join(os.getcwd(), "/francinette/check_compilation.sh")
+	output_path = os.path.join(os.getcwd(), "/francinette/temp/libft/war-machine/srcs/check_compilation.sh")
 	with open(input_path, "r") as input_file:
 		lines = input_file.readlines()
 	with open(output_path, "w") as output_file:
