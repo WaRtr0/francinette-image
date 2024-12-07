@@ -21,4 +21,8 @@ WORKDIR /francinette
 RUN pip3 install -r requirements.txt
 RUN pip3 install norminette
 RUN chmod 777 tester.sh
+COPY fix_war_machine/check_compilation.sh /francinette/check_compilation.sh
+COPY fix_war_machine/fix.sh /francinette/fix.sh
+COPY fix_war_machine/WarMachine.py /francinette/WarMachine.py
+RUN bash /francinette/fix.sh
 CMD ["/francinette/tester.sh"]
