@@ -2,10 +2,10 @@
 
 <div align="right">
   👉
-  <a href="https://github.com/WaRtr0/francinette-image/blob/master/README.md">
+  <a href="https://github.com/WaRtr0/francinette-image/blob/fix_war_machine/README.md">
     <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272296-82e81111-e524-439b-b971-900ce90d0603.png" alt="en">
   </a>
-   <a href="https://github.com/WaRtr0/francinette-image/blob/master/README_FR.md">
+   <a href="https://github.com/WaRtr0/francinette-image/blob/fix_war_machine/README_FR.md">
     <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272298-f8be0b14-1175-41e8-9ff9-91eb29c35779.png" alt="fr">
   </a>
 </div>
@@ -31,7 +31,7 @@ After installation, use the `francinette` or `paco` command inside your project'
 Copy and paste the following line into your terminal to kick off the installation, and you'll be all set to start testing your school 42 projects with Francinette in no time!
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/fix_war_machine/install.sh)"
 ```
 
 ## Update:
@@ -39,13 +39,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image
 Copy and paste the following line into your terminal to launch the francinette update
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/update.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/fix_war_machine/update.sh)"
 ```
 
 ## Uninstall:
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/uninstall.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/fix_war_machine/uninstall.sh)"
 ```
 ## Documentation
 

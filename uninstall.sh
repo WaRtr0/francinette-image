@@ -3,6 +3,7 @@
 mkdir -p $HOME/.tmp_francinette
 
 git clone https://github.com/WaRtr0/francinette-image.git $HOME/.tmp_francinette/francinette-image
+git checkout fix_war_machine
 
 source $HOME/.tmp_francinette/francinette-image/utils/remove_docker.sh
 source $HOME/.tmp_francinette/francinette-image/utils/remove_zshrc.sh
