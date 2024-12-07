@@ -7,8 +7,10 @@ BWhite='\033[1;37m'
 NC='\033[0m'
 if ! ls -l $HOME | grep "francinette-image" &> /dev/null; then
 	git clone https://github.com/WaRtr0/francinette-image.git $HOME/francinette-image
-	git checkout fix_war_machine
 fi
+
+cd $HOME/francinette-image
+git checkout fix_war_machine
 
 chmod +x $HOME/francinette-image/run.sh
 
