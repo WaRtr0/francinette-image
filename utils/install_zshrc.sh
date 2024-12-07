@@ -46,7 +46,7 @@ printf "\n\tfi" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
 
 printf "\nif ! docker ps | grep \"francinette-image\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
-printf "\n\tif docker run -d -i -v /home:/home -v /goinfre:/goinfre -v /sgoinfre:/sgoinfre -v %s/francinette-image/logs:/francinette/logs-t --name run-paco francinette-image /bin/bash 2>&1 | grep \"already\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
+printf "\n\tif docker run -d -i -v /home:/home -v /goinfre:/goinfre -v /sgoinfre:/sgoinfre -v %s/francinette-image/logs:/francinette/logs -v %s/francinette-image/temp:/francinette/temp --name run-paco francinette-image /bin/bash 2>&1 | grep \"already\" &> /dev/null; then" "$HOME" >> "$RC_FILE"
 printf "\n\t\tdocker start run-paco" "$HOME" >> "$RC_FILE"
 printf "\n\tfi" "$HOME" >> "$RC_FILE"
 printf "\nfi" "$HOME" >> "$RC_FILE"
