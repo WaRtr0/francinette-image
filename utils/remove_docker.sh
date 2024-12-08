@@ -1,4 +1,8 @@
 #!/bin/bash
+
+docker exec -t run-paco chmod -r 777 /francinette/logs
+docker exec -t run-paco chmod -r 777 /francinette/temp
+
 if docker ps | grep "francinette-image" &> /dev/null; then
     docker stop run-paco
     docker rm run-paco
