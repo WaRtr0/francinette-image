@@ -1,11 +1,11 @@
 #!/bin/bash
 if docker ps | grep "francinette-image" &> /dev/null; then
     docker stop run-paco
-    docker remove run-paco
+    docker rm run-paco
 fi
 
 if docker image ls | grep "francinette-image" &> /dev/null; then
-    docker image remove francinette-image
+    docker rmi francinette-image
 fi
 
 WHITE='\033[0;37m' 
