@@ -1,4 +1,7 @@
 #!/bin/bash
+
+docker exec -t run-paco rm -rf /francinette/temp /francinette/logs
+
 if docker ps | grep "francinette-image" &> /dev/null; then
     docker stop run-paco
     docker remove run-paco
