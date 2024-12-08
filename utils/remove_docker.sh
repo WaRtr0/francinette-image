@@ -8,7 +8,7 @@ if docker ps | grep "francinette-image" &> /dev/null; then
 fi
 
 if docker image ls | grep "francinette-image" &> /dev/null; then
-    docker image remove francinette-image
+    docker rmi -f francinette-image
 fi
 
 WHITE='\033[0;37m' 
