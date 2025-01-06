@@ -9,7 +9,7 @@ if ls -l $HOME | grep "francinette-image" &> /dev/null; then
     git clone https://github.com/WaRtr0/francinette-image.git $HOME/.tmp_francinette/francinette-image
 
     cd $HOME/.tmp_francinette/francinette-image
-    git checkout fix_war_machine
+    git checkout fix_war_machine-(remove-fsanitize-for-war-machine)
     
     source $HOME/.tmp_francinette/francinette-image/utils/move_tmp.sh
     source $HOME/.tmp_francinette/francinette-image/utils/remove_docker.sh
