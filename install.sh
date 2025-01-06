@@ -10,7 +10,7 @@ if ! ls -l $HOME | grep "francinette-image" &> /dev/null; then
 fi
 
 cd $HOME/francinette-image
-git checkout fix_war_machine
+git checkout fix_war_machine-(remove-fsanitize-for-war-machine)
 
 chmod +x $HOME/francinette-image/run.sh
 
