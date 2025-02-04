@@ -57,6 +57,7 @@ if [ "$(uname)" != "Darwin" ]; then
 			        	echo "✔️ $package is installed."
 				else
 			        	echo "❌ $package is not installed."
+					check=0
 			    	fi
 			done
 			;;
