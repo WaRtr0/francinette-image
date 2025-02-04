@@ -82,14 +82,7 @@ if [ "$check" -eq 1 ]; then
  	git clone --recursive https://github.com/xicodomingues/francinette.git "$INSTALL_DIR/francinette"
 	cd $INSTALL_DIR/francinette
 	if pip install -r requirements.txt ; then
-		cat << 'EOF' > tester.sh
-		#!/bin/bash
-		DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-		current_dir=$PWD
-		version=68
-		cd "$current_dir" || exit
-		python3 "$DIR/main.py" "$@"
-		EOF
+		sed -i '/^source/d' tester.sh
 		RC_FILE="$INSTALL_DIR/.zshrc"
 		if ! grep -q "alias paco=" "$RC_FILE"; then
 		    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
