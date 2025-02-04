@@ -37,6 +37,8 @@ cd
 
 if [ -z "${INSTALL_DIR}" ]; then
     INSTALL_DIR=$HOME
+    read -p "Install Directory (default: $INSTALL_DIR): " user_input
+    INSTALL_DIR=${user_input:-$INSTALL_DIR}
 fi
 
 if [ "$(uname)" != "Darwin" ]; then
