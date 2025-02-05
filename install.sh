@@ -95,75 +95,83 @@ fi
 if [ "$check" -eq 1 ]; then
 	rm -rf $INSTALL_DIR/.tmp_francinette
 	echo -e "${BLUE} [Francinette] The francinette-image is useless!${RESET}"
-	if ! ls -l $INSTALL_DIR | grep "francinette-image" &> /dev/null; then
- 		mkdir -p "$INSTALL_DIR/.tmp_francinette-image"
-   		git clone https://github.com/WaRtr0/francinette-image.git "$INSTALL_DIR/.tmp_francinette/francinette-image"
-		source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_docker.sh"
-		source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_zshrc.sh"
-  		rm -rf "$INSTALL_DIR/francinette-image" "$INSTALL_DIR/.tmp_francinette-image"
-		echo -e "${BLUE}Francinette-image${GREEB} Uninstalled OK${RESET}"
+	read -p "Do you want to force the installation of francinette-image? (Y/n) " answer
+	if [ -z "$answer" ]; then
+	    answer="y"
 	fi
- 	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
-		rm -rf $INSTALL_DIR/francinette
-		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK${RESET}"
- 	fi
-	echo -e "${GREEN} Installation of the original francinette in progress${RESET}"
- 	git clone --recursive https://github.com/xicodomingues/francinette.git "$INSTALL_DIR/francinette"
-	cd $INSTALL_DIR/francinette
-	if pip install -r requirements.txt ; then
-		sed -i '/^source/d' tester.sh
-		RC_FILE="$INSTALL_DIR/.zshrc"
-		if ! which python &>/dev/null; then
-		    if which python3 &>/dev/null; then
-		        sed -i 's/python/python3/g' tester.sh
-		    else
-      			echo -e "${RED} Python No Found${RESET}"
-		        check=0
-		    fi
-		fi
-		if ! grep -q "alias paco=" "$RC_FILE"; then
-		    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
-		fi
+	if [[ "$answer" =~ ^[Yy]$ ]]; then
+		check=0;
 	else
- 		if which pip &>/dev/null; then
-			echo "${RED}Installation of python packages interrupted"
-   			echo "${YELLOW}Your operating system encourages installing Python packages in an isolated environment."
-			read -p "Do you want to force installation in the system environment ? (y/N) " answer
-			if [ -z "$answer" ]; then
-			    answer="n"
+		if ! ls -l $INSTALL_DIR | grep "francinette-image" &> /dev/null; then
+	 		mkdir -p "$INSTALL_DIR/.tmp_francinette-image"
+	   		git clone https://github.com/WaRtr0/francinette-image.git "$INSTALL_DIR/.tmp_francinette/francinette-image"
+			source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_docker.sh"
+			source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_zshrc.sh"
+	  		rm -rf "$INSTALL_DIR/francinette-image" "$INSTALL_DIR/.tmp_francinette-image"
+			echo -e "${BLUE}Francinette-image${GREEB} Uninstalled OK${RESET}"
+		fi
+	 	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
+			rm -rf $INSTALL_DIR/francinette
+			echo -e "${BLUE}Francinette${GREEB} Uninstalled OK${RESET}"
+	 	fi
+		echo -e "${GREEN} Installation of the original francinette in progress${RESET}"
+	 	git clone --recursive https://github.com/xicodomingues/francinette.git "$INSTALL_DIR/francinette"
+		cd $INSTALL_DIR/francinette
+		if pip install -r requirements.txt ; then
+			sed -i '/^source/d' tester.sh
+			RC_FILE="$INSTALL_DIR/.zshrc"
+			if ! which python &>/dev/null; then
+			    if which python3 &>/dev/null; then
+			        sed -i 's/python/python3/g' tester.sh
+			    else
+	      			echo -e "${RED} Python No Found${RESET}"
+			        check=0
+			    fi
 			fi
-			if [[ "$answer" =~ ^[Yy]$ ]]; then
-				echo "Forcing installation in the system environment...${RESET}"
-			    	if pip install --break-system-packages -r requirements.txt ; then
-					sed -i '/^source/d' tester.sh
-					RC_FILE="$INSTALL_DIR/.zshrc"
-					if ! which python &>/dev/null; then
-					    if which python3 &>/dev/null; then
-					        sed -i 's/python/python3/g' tester.sh
-					    else
-			      			echo -e "${RED} Python No Found${RESET}"
-					        check=0
-					    fi
-					fi
-					if ! grep -q "alias paco=" "$RC_FILE"; then
-					    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
-					fi
-    				fi
-			else
-   				read -p "Would you like to install the francinette-image instead? (Y/n) " answer
+			if ! grep -q "alias paco=" "$RC_FILE"; then
+			    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
+			fi
+		else
+	 		if which pip &>/dev/null; then
+				echo "${RED}Installation of python packages interrupted"
+	   			echo "${YELLOW}Your operating system encourages installing Python packages in an isolated environment."
+				read -p "Do you want to force installation in the system environment ? (y/N) " answer
 				if [ -z "$answer" ]; then
-				    answer="y"
+				    answer="n"
 				fi
 				if [[ "$answer" =~ ^[Yy]$ ]]; then
-					check=0;
+					echo "Forcing installation in the system environment...${RESET}"
+				    	if pip install --break-system-packages -r requirements.txt ; then
+						sed -i '/^source/d' tester.sh
+						RC_FILE="$INSTALL_DIR/.zshrc"
+						if ! which python &>/dev/null; then
+						    if which python3 &>/dev/null; then
+						        sed -i 's/python/python3/g' tester.sh
+						    else
+				      			echo -e "${RED} Python No Found${RESET}"
+						        check=0
+						    fi
+						fi
+						if ! grep -q "alias paco=" "$RC_FILE"; then
+						    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
+						fi
+	    				fi
 				else
-    					echo -e "${RED}Francinette installation failed${RESET}"
-					exit ;
-    				fi
-   			fi
-   		else
-			check=0;
-   		fi
+	   				read -p "Would you like to install the francinette-image instead? (Y/n) " answer
+					if [ -z "$answer" ]; then
+					    answer="y"
+					fi
+					if [[ "$answer" =~ ^[Yy]$ ]]; then
+						check=0;
+					else
+	    					echo -e "${RED}Francinette installation failed${RESET}"
+						exit ;
+	    				fi
+	   			fi
+	   		else
+				check=0;
+	   		fi
+		fi
 	fi
 fi
 if [ "$check" -eq 0 ]; then
