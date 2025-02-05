@@ -90,6 +90,7 @@ if [ "$check" -eq 1 ]; then
 		    if which python3 &>/dev/null; then
 		        sed -i 's/python/python3/g' tester.sh
 		    else
+      			echo -e "${RED} Python No Found"
 		        check=0
 		    fi
 		fi
