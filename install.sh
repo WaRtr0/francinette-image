@@ -94,18 +94,18 @@ fi
 
 if [ "$check" -eq 1 ]; then
 	rm -rf $INSTALL_DIR/.tmp_francinette
-	echo -e "${BLUE} [Francinette] The francinette-image is useless!"
+	echo -e "${BLUE} [Francinette] The francinette-image is useless!${RESET}"
 	if ! ls -l $INSTALL_DIR | grep "francinette-image" &> /dev/null; then
  		mkdir -p "$INSTALL_DIR/.tmp_francinette-image"
    		git clone https://github.com/WaRtr0/francinette-image.git "$INSTALL_DIR/.tmp_francinette/francinette-image"
 		source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_docker.sh"
 		source "$INSTALL_DIR/.tmp_francinette/francinette-image/utils/remove_zshrc.sh"
   		rm -rf "$INSTALL_DIR/francinette-image" "$INSTALL_DIR/.tmp_francinette-image"
-		echo -e "${BLUE}Francinette-image${GREEB} Uninstalled OK$"
+		echo -e "${BLUE}Francinette-image${GREEB} Uninstalled OK${RESET}"
 	fi
  	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
 		rm -rf $INSTALL_DIR/francinette
-		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK"
+		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK${RESET}"
  	fi
 	echo -e "${GREEN} Installation of the original francinette in progress"
  	git clone --recursive https://github.com/xicodomingues/francinette.git "$INSTALL_DIR/francinette"
@@ -130,7 +130,7 @@ if [ "$check" -eq 1 ]; then
 fi
 if [ "$check" -eq 0 ]; then
 	rm -rf $INSTALL_DIR/.tmp_francinette
-	echo -e "${GREEN} Installation of the francinette-image in progress"
+	echo -e "${GREEN} Installation of the francinette-image in progress${RESET}"
 	
 	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
 		rm -rf $INSTALL_DIR/francinette
