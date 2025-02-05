@@ -33,6 +33,11 @@ if [ -d "$INSTALL_DIR/.tmp_francinette" ]; then
     rm -rf "$INSTALL_DIR/.tmp_francinette"
 fi
 
+sed -i '/^alias francinette=/d' $HOME/.bashrc
+sed -i '/^alias paco=/d' $HOME/.bashrc
+sed -i '/^alias francinette=/d' $HOME/.zshrc
+sed -i '/^alias francinette=/d' $HOME/.zshrc
+
 WHITE='\033[0;37m' 
 BLUE='\033[0;36m'
 GREEN='\033[0;32m'
