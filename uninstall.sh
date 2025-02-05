@@ -36,7 +36,7 @@ fi
 sed -i '/^alias francinette=/d' $HOME/.bashrc
 sed -i '/^alias paco=/d' $HOME/.bashrc
 sed -i '/^alias francinette=/d' $HOME/.zshrc
-sed -i '/^alias francinette=/d' $HOME/.zshrc
+sed -i '/^alias paco=/d' $HOME/.zshrc
 
 WHITE='\033[0;37m' 
 BLUE='\033[0;36m'
