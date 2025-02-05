@@ -86,13 +86,13 @@ if [ "$check" -eq 1 ]; then
 	if pip install -r requirements.txt ; then
 		sed -i '/^source/d' tester.sh
 		RC_FILE="$INSTALL_DIR/.zshrc"
-  		if -n which python; then
-    			if which python3; then
-				sed -i 's/python/python3/g' tester.sh
-    			else
-       				check=0;
-	   		fi
-      		fi
+		if which python &>/dev/null; then
+		    if which python3 &>/dev/null; then
+		        sed -i 's/python/python3/g' tester.sh
+		    else
+		        check=0
+		    fi
+		fi
 		if ! grep -q "alias paco=" "$RC_FILE"; then
 		    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
 		fi
