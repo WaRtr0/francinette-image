@@ -25,6 +25,10 @@ if [ -d "$INSTALL_DIR/francinette-image" ]; then
     rm -rf "$INSTALL_DIR/francinette-image"
 fi
 
+if [ -d "$INSTALL_DIR/francinette" ]; then
+    rm -rf "$INSTALL_DIR/francinette"
+fi
+
 if [ -d "$INSTALL_DIR/.tmp_francinette" ]; then
     rm -rf "$INSTALL_DIR/.tmp_francinette"
 fi
