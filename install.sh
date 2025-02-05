@@ -84,6 +84,8 @@ if [ "$(uname)" != "Darwin" ]; then
 			done
 			;;
 	esac
+else
+	check=0
 fi
 
 if [ "$check" -eq 1 ]; then
