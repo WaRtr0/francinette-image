@@ -83,6 +83,9 @@ if [ "$(uname)" != "Darwin" ]; then
 			    	fi
 			done
 			;;
+		*)
+			check=0
+			;;
 	esac
 else
 	check=0
