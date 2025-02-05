@@ -95,9 +95,9 @@ fi
 if [ "$check" -eq 1 ]; then
 	rm -rf $INSTALL_DIR/.tmp_francinette
 	echo -e "${BLUE} [Francinette] The francinette-image is useless!${RESET}"
-	read -p "Do you want to force the installation of francinette-image? (Y/n) " answer
+	read -p "Do you want to force the installation of francinette-image? (y/N) " answer
 	if [ -z "$answer" ]; then
-	    answer="y"
+	    answer="n"
 	fi
 	if [[ "$answer" =~ ^[Yy]$ ]]; then
 		check=0;
