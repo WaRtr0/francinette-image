@@ -40,6 +40,7 @@ if [ -z "${INSTALL_DIR}" ]; then
     read -p "Install Directory (default: $INSTALL_DIR): " user_input
     INSTALL_DIR=${user_input:-$INSTALL_DIR}
 fi
+export INSTALL_DIR
 
 if [ "$(uname)" != "Darwin" ]; then
 	case $(lsb_release -is) in
