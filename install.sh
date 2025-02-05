@@ -53,7 +53,27 @@ if [ "$(uname)" != "Darwin" ]; then
 				    fi
 			done
 			;;
+		"Debian")
+			for package in "${packages_ubuntu[@]}"; do
+				  if dpkg -s "$package" &> /dev/null; then
+				        echo "✔️ $package is installed."
+				    else
+				        echo "❌ $package is not installed."
+					check=0
+				    fi
+			done
+			;;
   		"Arch")
+			for package in "${packages_arch[@]}"; do
+				if pacman -Qi "$package" &> /dev/null; then
+			        	echo "✔️ $package is installed."
+				else
+			        	echo "❌ $package is not installed."
+					check=0
+			    	fi
+			done
+			;;
+   		"EndeavourOS")
 			for package in "${packages_arch[@]}"; do
 				if pacman -Qi "$package" &> /dev/null; then
 			        	echo "✔️ $package is installed."
