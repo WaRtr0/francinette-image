@@ -89,6 +89,7 @@ else
 fi
 
 if [ "$check" -eq 1 ]; then
+	rm -rf $INSTALL_DIR/.tmp_francinette
 	echo -e "${BLUE} [Francinette] The francinette-image is useless!"
 	if ! ls -l $INSTALL_DIR | grep "francinette-image" &> /dev/null; then
  		mkdir -p "$INSTALL_DIR/.tmp_francinette-image"
@@ -124,6 +125,7 @@ if [ "$check" -eq 1 ]; then
 	fi
 fi
 if [ "$check" -eq 0 ]; then
+	rm -rf $INSTALL_DIR/.tmp_francinette
 	echo -e "${GREEN} Installation of the francinette-image in progress"
 	
 	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
