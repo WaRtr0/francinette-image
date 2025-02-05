@@ -107,7 +107,7 @@ if [ "$check" -eq 1 ]; then
 		rm -rf $INSTALL_DIR/francinette
 		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK${RESET}"
  	fi
-	echo -e "${GREEN} Installation of the original francinette in progress"
+	echo -e "${GREEN} Installation of the original francinette in progress${RESET}"
  	git clone --recursive https://github.com/xicodomingues/francinette.git "$INSTALL_DIR/francinette"
 	cd $INSTALL_DIR/francinette
 	if pip install -r requirements.txt ; then
@@ -117,7 +117,7 @@ if [ "$check" -eq 1 ]; then
 		    if which python3 &>/dev/null; then
 		        sed -i 's/python/python3/g' tester.sh
 		    else
-      			echo -e "${RED} Python No Found"
+      			echo -e "${RED} Python No Found${RESET}"
 		        check=0
 		    fi
 		fi
@@ -125,7 +125,45 @@ if [ "$check" -eq 1 ]; then
 		    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
 		fi
 	else
-		check=0;
+ 		if which pip &>/dev/null; then
+			echo "${RED}Installation of python packages interrupted"
+   			echo "${YELLOW}Your operating system encourages installing Python packages in an isolated environment."
+			read -p "Do you want to force installation in the system environment with --break-system-packages? (y/N) " answer
+			if [ -z "$answer" ]; then
+			    answer="n"
+			fi
+			if [[ "$answer" =~ ^[Yy]$ ]]; then
+				echo "Forcing installation in the system environment with --break-system-packages..."
+			    	if pip install --break-system-packages -r requirements.txt ; then
+					sed -i '/^source/d' tester.sh
+					RC_FILE="$INSTALL_DIR/.zshrc"
+					if ! which python &>/dev/null; then
+					    if which python3 &>/dev/null; then
+					        sed -i 's/python/python3/g' tester.sh
+					    else
+			      			echo -e "${RED} Python No Found${RESET}"
+					        check=0
+					    fi
+					fi
+					if ! grep -q "alias paco=" "$RC_FILE"; then
+					    echo "alias paco='$INSTALL_DIR/francinette/tester.sh'" >> "$RC_FILE"
+					fi
+    				fi
+			else
+   				read -p "Would you like to install the francinette-image instead? (Y/n) " answer
+				if [ -z "$answer" ]; then
+				    answer="y"
+				fi
+				if [[ "$answer" =~ ^[Yy]$ ]]; then
+					check=0;
+				else
+    					echo -e "${RED}Francinette installation failed${RESET}"
+					exit ;
+    				fi
+   			fi
+   		else
+			check=0;
+   		fi
 	fi
 fi
 if [ "$check" -eq 0 ]; then
@@ -134,7 +172,7 @@ if [ "$check" -eq 0 ]; then
 	
 	if ls -l $INSTALL_DIR | grep "francinette" &> /dev/null; then
 		rm -rf $INSTALL_DIR/francinette
-		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK"
+		echo -e "${BLUE}Francinette${GREEB} Uninstalled OK${RESET}"
  	fi
 
 	if ! ls -l $INSTALL_DIR | grep "francinette-image" &> /dev/null; then
@@ -146,9 +184,9 @@ if [ "$check" -eq 0 ]; then
 	if ! ls -l $INSTALL_DIR/francinette-image | grep "francinette.tar" &> /dev/null; then
 		if hostname | grep "42lyon.fr" &> /dev/null; then
 	 		if ls -l /sgoinfre/goinfre/Perso/mmorot/share | grep "francinette.tar" &> /dev/null; then
-	   			echo -e "${BLUE}[Francinette] ${WHITE}Copy of francinette.tar (${BWhite}/sgoinfre/goinfre/Perso/mmorot/share${WHITE})"
+	   			echo -e "${BLUE}[Francinette] ${WHITE}Copy of francinette.tar (${BWhite}/sgoinfre/goinfre/Perso/mmorot/share${WHITE})${RESET}"
 	      			cp /sgoinfre/goinfre/Perso/mmorot/share/francinette.tar $INSTALL_DIR/francinette-image/
-		 		echo -e "${BLUE}[Francinette] ${WHITE}Copy ${GREEN}OK"
+		 		echo -e "${BLUE}[Francinette] ${WHITE}Copy ${GREEN}OK${RESET}"
 	   		fi
 	 	fi
 	fi
@@ -164,7 +202,7 @@ if [ "$check" -eq 0 ]; then
 	source $INSTALL_DIR/francinette-image/utils/install_zshrc.sh
 fi
 
-echo -e "${BLUE}[Francinette] ${GREEN}Installation completed!\n${WHITE}Use the ${BWhite}paco${WHITE} or ${BWhite}francinette${WHITE} commands in your project folder."
+echo -e "${BLUE}[Francinette] ${GREEN}Installation completed!\n${WHITE}Use the ${BWhite}paco${WHITE} or ${BWhite}francinette${WHITE} commands in your project folder.${RESET}"
 
 exec "$SHELL"
 
