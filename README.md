@@ -34,14 +34,6 @@ Copy and paste the following line into your terminal to kick off the installatio
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/install.sh)"
 ```
 
-## Update:
-
-Copy and paste the following line into your terminal to launch the francinette update
-
-```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/update.sh)"
-```
-
 ## Uninstall:
 
 ```shell
