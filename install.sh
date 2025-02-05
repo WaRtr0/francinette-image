@@ -128,12 +128,12 @@ if [ "$check" -eq 1 ]; then
  		if which pip &>/dev/null; then
 			echo "${RED}Installation of python packages interrupted"
    			echo "${YELLOW}Your operating system encourages installing Python packages in an isolated environment."
-			read -p "Do you want to force installation in the system environment with --break-system-packages? (y/N) " answer
+			read -p "Do you want to force installation in the system environment ? (y/N) " answer
 			if [ -z "$answer" ]; then
 			    answer="n"
 			fi
 			if [[ "$answer" =~ ^[Yy]$ ]]; then
-				echo "Forcing installation in the system environment with --break-system-packages..."
+				echo "Forcing installation in the system environment...${RESET}"
 			    	if pip install --break-system-packages -r requirements.txt ; then
 					sed -i '/^source/d' tester.sh
 					RC_FILE="$INSTALL_DIR/.zshrc"
