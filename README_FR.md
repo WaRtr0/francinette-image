@@ -35,14 +35,6 @@ Copiez et collez la ligne suivante dans votre terminal pour lancer l'installatio
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/install.sh)"
 ```
 
-## MISE À JOUR:
-
-Copiez et collez la ligne suivante dans votre terminal pour lancer une mise a jour de la francinette
-
-```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WaRtr0/francinette-image/master/update.sh)"
-```
-
 ## DÉSINSTALLER:
 
 ```shell
