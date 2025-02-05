@@ -86,7 +86,7 @@ if [ "$check" -eq 1 ]; then
 	if pip install -r requirements.txt ; then
 		sed -i '/^source/d' tester.sh
 		RC_FILE="$INSTALL_DIR/.zshrc"
-		if which python &>/dev/null; then
+		if ! which python &>/dev/null; then
 		    if which python3 &>/dev/null; then
 		        sed -i 's/python/python3/g' tester.sh
 		    else
