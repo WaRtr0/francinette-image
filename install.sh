@@ -9,14 +9,14 @@ set -e
 
 packages_ubuntu=(
 	gcc
-	clang
-	libpq-dev
 	libbsd-dev
 	libncurses-dev
 	valgrind
 	python3-pip
 	git
 )
+
+#which clang
 
 packages_arch=(
 	gcc
