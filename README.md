@@ -8,6 +8,9 @@
    <a href="https://github.com/WaRtr0/francinette-image/blob/master/README_FR.md">
     <img height="20px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/25512932/282272298-f8be0b14-1175-41e8-9ff9-91eb29c35779.png" alt="fr">
   </a>
+  <a href="https://github.com/WaRtr0/francinette-image/blob/master/README_ES.md">
+    <img height="20px" src="https://github.com/user-attachments/assets/02babee0-5442-43f3-8062-71b946f3d62f" alt="es">
+  </a>
 </div>
 <h1 align="center">Francinette install on <strong>42-Session-Ubuntu</strong></h1>
 
